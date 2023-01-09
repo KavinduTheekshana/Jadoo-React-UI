@@ -1,0 +1,137 @@
+.jadoo-header-section {
+    .jadoo-header-content {
+        display: flex;
+        flex-direction: row;
+
+        .section-titles {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            flex-direction: column;
+
+            h3 {
+                font-style: normal;
+                font-weight: 700;
+                font-size: 20px;
+                line-height: 30px;
+                font-family: var(--font-family--second);
+                text-transform: uppercase;
+                color: var(--color-subtext);
+            }
+
+            h1 {
+                font-style: normal;
+                font-weight: 700;
+                font-size: 84px;
+                line-height: 89px;
+                color: var(--color-primary);
+                font-family: var(--font-family--header);
+            }
+
+            .decore {
+                background-image: url(../../assets/image/Decore-2.svg);
+                background-repeat: no-repeat;
+                background-position: bottom right;
+            }
+
+            .subtext {
+                margin-top: 30px;
+                font-style: normal;
+                font-weight: 200;
+                font-size: 16px;
+                line-height: 30px;
+                max-width: 500px;
+                font-family: var(--font-family--second);
+            }
+
+            .jadoo-header-button {
+                display: flex;
+                justify-content: flex-start;
+                align-items: center;
+                flex-direction: row;
+                margin-top: 2rem;
+                margin-bottom: 3rem;
+
+                .btn-yellow {
+                    background: #F1A501;
+                    box-shadow: 0px 20px 35px rgba(241, 165, 1, 0.15);
+                    border-radius: 10px;
+                    font-family: var(--font-family--third);
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 18px;
+                    line-height: 23px;
+                    text-align: center;
+                    color: #FFFFFF;
+                    border: none;
+                    padding: 14px 22px;
+                    cursor: pointer;
+                    margin-right: 44px;
+                    border: 1px solid #F1A501;
+                    transition: all 0.5s;
+
+                    &:hover {
+                        background: transparent;
+                        border: 1px solid #F1A501;
+                        color: #F1A501;
+                    }
+                }
+
+                .demo {
+                    display: flex;
+                    justify-content: flex-start;
+                    align-items: center;
+                    flex-direction: row;
+                    cursor: pointer;
+                    &:hover{
+                        button{
+                            border: 1px solid #DF6951;
+                            background: #fff;
+                            color: #DF6951;
+                        }
+                    }
+
+                    button {
+                        background: #DF6951;
+                        box-shadow: 0px 15px 30px rgba(223, 105, 81, 0.3);
+                        border: 1px solid #DF6951;
+                        border-radius: 50%;
+                        width: 52px;
+                        height: 52px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        cursor: pointer;
+                        color: #FFFFFF;
+                        transition: all 0.5s;
+                    }
+
+                    p {
+                        margin-left: 21px;
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 17px;
+                        line-height: 26px;
+                        font-family: var(--font-family--second);
+                    }
+                }
+            }
+        }
+
+        .jadoo-header-image {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            img {
+                width: 100%;
+                height: 100%;
+            }
+        }
+
+
+    }
+
+}

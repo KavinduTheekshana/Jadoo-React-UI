@@ -1,0 +1,98 @@
+.jadoo-navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 6rem;
+
+    .jadoo-navbar-links {
+        flex: 1;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .jadoo-navbar-logo {
+            margin-right: 2rem;
+
+            img {
+                width: 114px;
+                height: 33px;
+            }
+        }
+
+        .jadoo-navbar-links-container {
+            display: flex;
+            flex-direction: row;
+
+            .jadoo-navbar-links-item {
+                nav {
+                    ul {
+                        list-style: none;
+                        display: flex;
+                        flex-direction: row;
+                        float: right;
+                        justify-content: center;
+                        align-items: center;
+                        li{
+                            display: inline-block;
+                            font-style: normal;
+                            font-weight: 400;
+                            font-size: 17px;
+                            color: var(--color-text-light);
+                            font-family: var(--font-family--third);
+                            margin: 0 1rem;
+                            cursor: pointer;
+                            font-style: normal;
+                            a,a::before ,a::after{
+                                transition: all 0.5s;
+                            }
+                            &:hover{
+                                color: var(--color-text);
+                            }
+                            a{
+                                position: relative;
+                               padding-bottom: 8px;
+                            }
+                            a::after{
+                                position: absolute;
+                                bottom: 0;
+                                left: 0;
+                                right: 0;
+                                margin: auto;
+                                width: 0%;
+                                content: '.';
+                                color: transparent;
+                                background: var(--color-text);
+                                height: 1px;
+                            }
+                            a:hover::after{
+                                width: 100%;
+                            }
+                            .btn-outline{
+                                border: 1px solid var(--color-text-light);
+                                border-radius: 5px;
+                                display: inline-block;
+                                font-style: normal;
+                                font-weight: 400;
+                                font-size: 17px;
+                                color: var(--color-text-light);
+                                font-family: var(--font-family--third);
+                                margin: 0 1rem;
+                                cursor: pointer;
+                                font-style: normal;
+                                padding: 6px 21px;
+                                background-color: transparent;
+                                transition: all 0.5s;
+                                &:hover{
+                                    background-color: var(--color-text-light);
+                                    color: #fff;
+                                }
+                            }
+                        }
+                    }
+                }
+
+          
+            }
+        }
+    }
+}
